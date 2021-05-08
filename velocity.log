@@ -1,0 +1,150 @@
+2021-05-07 18:05:50,867 - Log4JLogChute initialized using file 'velocity.log'
+2021-05-07 18:05:50,868 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2021-05-07 18:05:50,868 - Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+2021-05-07 18:05:50,868 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2021-05-07 18:05:50,869 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:398)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeSingleton.init(RuntimeSingleton.java:113)
+	at org.apache.velocity.app.Velocity.init(Velocity.java:83)
+	at org.mule.tooling.core.io.MuleResourceUtils.executeVelocityTemplate(MuleResourceUtils.java:713)
+	at org.mule.tooling.runtime.controller.MuleControllerHelper.initializeMuleConfig(MuleControllerHelper.java:251)
+	at org.mule.tooling.runtime.controller.MuleControllerHelper.configureInstance(MuleControllerHelper.java:122)
+	at org.mule.tooling.runtime.controller.MuleController.start(MuleController.java:95)
+	at org.mule.tooling.client.startup.ToolingManager.setup(ToolingManager.java:341)
+	at org.mule.tooling.client.startup.ToolingManager.getToolingInstance(ToolingManager.java:162)
+	at org.mule.tooling.client.startup.ToolingClientStartup$1.lambda$0(ToolingClientStartup.java:24)
+	at java.base/java.util.Optional.ifPresent(Optional.java:183)
+	at org.mule.tooling.client.startup.ToolingClientStartup$1.run(ToolingClientStartup.java:22)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter cannot be found by org.apache.velocity_1.5.0.v200905192330
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:516)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 20 more
+2021-05-07 18:05:50,871 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2021-05-07 18:05:50,871 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2021-05-07 18:05:50,875 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2021-05-07 18:05:50,879 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2021-05-07 18:05:50,881 - Do unicode file recognition:  false
+2021-05-07 18:05:50,881 - FileResourceLoader : adding path '.'
+2021-05-07 18:05:50,891 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2021-05-07 18:05:50,893 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2021-05-07 18:05:50,894 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2021-05-07 18:05:50,896 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2021-05-07 18:05:50,898 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2021-05-07 18:05:50,899 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2021-05-07 18:05:50,936 - Created '20' parsers.
+2021-05-07 18:05:50,943 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2021-05-07 18:05:50,944 - Velocimacro : Default library not found.
+2021-05-07 18:05:50,944 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2021-05-07 18:05:50,945 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2021-05-07 18:05:50,945 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2021-05-07 18:05:50,945 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2021-05-07 18:26:19,678 - Log4JLogChute initialized using file 'velocity.log'
+2021-05-07 18:26:19,679 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2021-05-07 18:26:19,679 - Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+2021-05-07 18:26:19,679 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2021-05-07 18:26:19,680 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:398)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeSingleton.init(RuntimeSingleton.java:113)
+	at org.apache.velocity.app.Velocity.init(Velocity.java:83)
+	at org.mule.tooling.core.io.MuleResourceUtils.executeVelocityTemplate(MuleResourceUtils.java:713)
+	at org.mule.tooling.runtime.controller.MuleControllerHelper.initializeMuleConfig(MuleControllerHelper.java:251)
+	at org.mule.tooling.runtime.controller.MuleControllerHelper.configureInstance(MuleControllerHelper.java:122)
+	at org.mule.tooling.runtime.controller.MuleController.start(MuleController.java:95)
+	at org.mule.tooling.client.startup.ToolingManager.setup(ToolingManager.java:341)
+	at org.mule.tooling.client.startup.ToolingManager.getToolingInstance(ToolingManager.java:162)
+	at org.mule.tooling.client.startup.ToolingClientStartup$1.lambda$0(ToolingClientStartup.java:24)
+	at java.base/java.util.Optional.ifPresent(Optional.java:183)
+	at org.mule.tooling.client.startup.ToolingClientStartup$1.run(ToolingClientStartup.java:22)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter cannot be found by org.apache.velocity_1.5.0.v200905192330
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:516)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 20 more
+2021-05-07 18:26:19,682 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2021-05-07 18:26:19,682 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2021-05-07 18:26:19,685 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2021-05-07 18:26:19,689 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2021-05-07 18:26:19,690 - Do unicode file recognition:  false
+2021-05-07 18:26:19,690 - FileResourceLoader : adding path '.'
+2021-05-07 18:26:19,702 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2021-05-07 18:26:19,703 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2021-05-07 18:26:19,705 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2021-05-07 18:26:19,706 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2021-05-07 18:26:19,708 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2021-05-07 18:26:19,709 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2021-05-07 18:26:19,749 - Created '20' parsers.
+2021-05-07 18:26:19,755 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2021-05-07 18:26:19,755 - Velocimacro : Default library not found.
+2021-05-07 18:26:19,755 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2021-05-07 18:26:19,756 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2021-05-07 18:26:19,756 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2021-05-07 18:26:19,756 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2021-05-07 19:34:56,683 - Log4JLogChute initialized using file 'velocity.log'
+2021-05-07 19:34:56,683 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2021-05-07 19:34:56,684 - Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+2021-05-07 19:34:56,684 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2021-05-07 19:34:56,684 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:398)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeSingleton.init(RuntimeSingleton.java:113)
+	at org.apache.velocity.app.Velocity.init(Velocity.java:83)
+	at org.mule.tooling.core.io.MuleResourceUtils.executeVelocityTemplate(MuleResourceUtils.java:713)
+	at org.mule.tooling.runtime.controller.MuleControllerHelper.initializeMuleConfig(MuleControllerHelper.java:251)
+	at org.mule.tooling.runtime.controller.MuleControllerHelper.configureInstance(MuleControllerHelper.java:122)
+	at org.mule.tooling.runtime.controller.MuleController.start(MuleController.java:95)
+	at org.mule.tooling.client.startup.ToolingManager.setup(ToolingManager.java:341)
+	at org.mule.tooling.client.startup.ToolingManager.getToolingInstance(ToolingManager.java:162)
+	at org.mule.tooling.client.startup.ToolingClientStartup$1.lambda$0(ToolingClientStartup.java:24)
+	at java.base/java.util.Optional.ifPresent(Optional.java:183)
+	at org.mule.tooling.client.startup.ToolingClientStartup$1.run(ToolingClientStartup.java:22)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter cannot be found by org.apache.velocity_1.5.0.v200905192330
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:516)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 20 more
+2021-05-07 19:34:56,690 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2021-05-07 19:34:56,690 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2021-05-07 19:34:56,695 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2021-05-07 19:34:56,699 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2021-05-07 19:34:56,700 - Do unicode file recognition:  false
+2021-05-07 19:34:56,700 - FileResourceLoader : adding path '.'
+2021-05-07 19:34:56,709 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2021-05-07 19:34:56,710 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2021-05-07 19:34:56,715 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2021-05-07 19:34:56,716 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2021-05-07 19:34:56,717 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2021-05-07 19:34:56,719 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2021-05-07 19:34:56,754 - Created '20' parsers.
+2021-05-07 19:34:56,760 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2021-05-07 19:34:56,761 - Velocimacro : Default library not found.
+2021-05-07 19:34:56,761 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2021-05-07 19:34:56,761 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2021-05-07 19:34:56,761 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2021-05-07 19:34:56,761 - Velocimacro : autoload off : VM system will not automatically reload global library macros
